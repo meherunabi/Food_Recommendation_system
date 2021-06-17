@@ -61,7 +61,7 @@ def home():
 
 @app.route("/recommend")
 def recommend():
-    movie = request.args.get('name')
+    movie = request.args.get('movie')
     r = rcmd(movie)
     movie = movie.upper()
     if type(r)==type('string'):
